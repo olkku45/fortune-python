@@ -20,6 +20,7 @@ def split_file_into_chunks(file):
 
 quotes = split_file_into_chunks(w_newline)  
 
+
 def get_random_quote(quotes):    
     quote_index = random.randint(1, len(quotes) + 1)
 
