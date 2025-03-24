@@ -18,13 +18,12 @@ def split_file_into_chunks(file):
 
     return quotes
 
-quotes = split_file_into_chunks(w_newline)  
+
+quotes = split_file_into_chunks(w_newline)
 
 
-def get_random_quote(quotes):    
-    quote_index = random.randint(1, len(quotes) + 1)
-
-    return quotes[quote_index]
+def get_random_quote(quotes):
+    return random.choice(quotes)
 
 
 if __name__ == "__main__":
